@@ -3,21 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:gravity="center"
     android:layout_height="match_parent">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:fontFamily="cursive"
-        android:gravity="center_vertical|center_horizontal"
-        android:textColor="@android:color/black"
-        android:textSize="@dimen/_20sdp"
-        android:textStyle="bold"
-        android:text="Notification on going"/>
-
     <ScrollView
-        android:visibility="gone"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:layout_alignParentLeft="true"
@@ -50,11 +38,11 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
+                        android:fontFamily="cursive"
                         android:gravity="center"
                         android:text="Bornosky Communication"
                         android:textColor="@android:color/white"
-                        android:textSize="18sp"
-                        android:textStyle="bold" />
+                        android:textSize="20sp" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -97,11 +85,15 @@
                                     android:layout_centerHorizontal="true"
                                     android:layout_marginTop="10dp"
                                     android:layout_marginBottom="10dp"
-                                    android:text="Individual Message"
+                                    android:fontFamily="sans-serif-condensed"
+                                    android:gravity="center"
+                                    android:text="Individual Notification"
+                                    android:textColor="@android:color/black"
+
                                     android:textSize="16sp" />
 
                                 <Button
-                                    android:id="@+id/btnIndividualSMS"
+                                    android:id="@+id/btnIndividualNotify"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
                                     android:background="@android:color/transparent" />
@@ -112,8 +104,8 @@
                                     android:layout_marginTop="@dimen/_15sdp"
                                     android:layout_marginRight="@dimen/_20sdp"
                                     android:layout_toRightOf="@id/image1"
-                                    app:srcCompat="@drawable/ic_sms"
                                     android:tint="@android:color/holo_green_dark"
+                                    app:srcCompat="@drawable/ic_sms"
                                     tools:ignore="VectorDrawableCompat" />
                             </RelativeLayout>
 
@@ -122,7 +114,7 @@
                         <android.support.v7.widget.CardView
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
-                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
                             android:layout_weight="1"
                             android:gravity="center"
                             android:orientation="vertical">
@@ -132,25 +124,30 @@
                                 android:layout_height="match_parent">
 
                                 <ImageView
-                                    android:id="@+id/image2"
+                                    android:id="@+id/image5"
                                     android:layout_width="50dp"
                                     android:layout_height="50dp"
                                     android:layout_centerInParent="true"
-
-                                    android:src="@drawable/ic_students" />
+                                    android:src="@drawable/ic_sms_with_name"
+                                    android:tint="@android:color/holo_green_dark" />
 
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_below="@id/image2"
+                                    android:layout_below="@id/image5"
                                     android:layout_centerHorizontal="true"
                                     android:layout_marginTop="10dp"
                                     android:layout_marginBottom="10dp"
-                                    android:text="SMS For All Students"
+                                    android:fontFamily="sans-serif-condensed"
+                                    android:gravity="center"
+                                    android:maxLines="2"
+                                    android:text="Notification with Name"
+                                    android:textColor="@android:color/black"
+
                                     android:textSize="16sp" />
 
                                 <Button
-                                    android:id="@+id/btnSMSForAllStudents"
+                                    android:id="@+id/btnNotifyWithName"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
                                     android:background="@android:color/transparent" />
@@ -158,6 +155,7 @@
                             </RelativeLayout>
 
                         </android.support.v7.widget.CardView>
+
                     </LinearLayout>
 
                     <LinearLayout
@@ -193,12 +191,14 @@
                                     android:layout_centerHorizontal="true"
                                     android:layout_marginTop="10dp"
                                     android:layout_marginBottom="10dp"
-                                    android:text="Absent Message"
-                                    android:textSize="16sp"
-                                    android:textStyle="bold" />
+                                    android:fontFamily="sans-serif-condensed"
+                                    android:gravity="center"
+                                    android:text="Absent Notification"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="16sp" />
 
                                 <Button
-                                    android:id="@+id/btnAbsentSMS"
+                                    android:id="@+id/btnAbsentNotify"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
                                     android:background="@android:color/transparent" />
@@ -209,8 +209,8 @@
                                     android:layout_marginTop="@dimen/_15sdp"
                                     android:layout_marginRight="@dimen/_20sdp"
                                     android:layout_toRightOf="@id/image3"
-                                    app:srcCompat="@drawable/ic_sms"
                                     android:tint="#A01D0F"
+                                    app:srcCompat="@drawable/ic_sms"
                                     tools:ignore="VectorDrawableCompat" />
                             </RelativeLayout>
 
@@ -242,11 +242,15 @@
                                     android:layout_centerHorizontal="true"
                                     android:layout_marginTop="10dp"
                                     android:layout_marginBottom="10dp"
+                                    android:fontFamily="sans-serif-condensed"
+                                    android:gravity="center"
                                     android:text="Teachers SMS"
+                                    android:textColor="@android:color/black"
+
                                     android:textSize="16sp" />
 
                                 <Button
-                                    android:id="@+id/btnTeachersSMS"
+                                    android:id="@+id/btnTeachersNotify"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
                                     android:background="@android:color/transparent" />
@@ -262,10 +266,11 @@
                         android:layout_marginBottom="10dp"
                         android:orientation="horizontal">
 
+
                         <android.support.v7.widget.CardView
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
-                            android:layout_marginRight="5dp"
+                            android:layout_marginLeft="5dp"
                             android:layout_weight="1"
                             android:gravity="center"
                             android:orientation="vertical">
@@ -275,26 +280,30 @@
                                 android:layout_height="match_parent">
 
                                 <ImageView
-                                    android:id="@+id/image5"
+                                    android:id="@+id/image2"
                                     android:layout_width="50dp"
                                     android:layout_height="50dp"
                                     android:layout_centerInParent="true"
-                                    android:src="@drawable/ic_sms_with_name"
-                                    android:tint="@android:color/holo_green_dark" />
+
+                                    android:src="@drawable/ic_students" />
 
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_below="@id/image5"
+                                    android:layout_below="@id/image2"
                                     android:layout_centerHorizontal="true"
                                     android:layout_marginTop="10dp"
+
                                     android:layout_marginBottom="10dp"
-                                    android:maxLines="2"
-                                    android:text="Message with Name"
+                                    android:fontFamily="sans-serif-condensed"
+                                    android:gravity="center"
+                                    android:text="Notify For All Students"
+                                    android:textColor="@android:color/black"
+
                                     android:textSize="16sp" />
 
                                 <Button
-                                    android:id="@+id/buttonFinance"
+                                    android:id="@+id/btnNotifyForAllStudents"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
                                     android:background="@android:color/transparent" />
@@ -302,6 +311,7 @@
                             </RelativeLayout>
 
                         </android.support.v7.widget.CardView>
+
 
                         <android.support.v7.widget.CardView
                             android:layout_width="0dp"
@@ -329,11 +339,15 @@
                                     android:layout_centerHorizontal="true"
                                     android:layout_marginTop="10dp"
                                     android:layout_marginBottom="10dp"
-                                    android:text="Set Absent Message"
+                                    android:fontFamily="sans-serif-condensed"
+                                    android:gravity="center"
+                                    android:text="Set Absent Notification"
+                                    android:textColor="@android:color/black"
+
                                     android:textSize="16sp" />
 
                                 <Button
-                                    android:id="@+id/buttonComfort"
+                                    android:id="@+id/buttonAbsentNotification"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
                                     android:background="@android:color/transparent" />
@@ -351,6 +365,7 @@
 
                         </android.support.v7.widget.CardView>
                     </LinearLayout>
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="135dp"
@@ -374,8 +389,7 @@
                                     android:layout_width="50dp"
                                     android:layout_height="50dp"
                                     android:layout_centerInParent="true"
-                                    android:src="@drawable/ic_sms_all_shift"
-                                    />
+                                    android:src="@drawable/ic_sms_all_shift" />
 
                                 <TextView
                                     android:layout_width="wrap_content"
@@ -384,23 +398,28 @@
                                     android:layout_centerHorizontal="true"
                                     android:layout_marginTop="10dp"
                                     android:layout_marginBottom="10dp"
+                                    android:fontFamily="sans-serif-condensed"
+                                    android:gravity="center"
                                     android:maxLines="2"
-                                    android:text="SMS for all shift "
+                                    android:text="Notify for all shift "
+                                    android:textColor="@android:color/black"
+
                                     android:textSize="16sp" />
 
                                 <Button
-                                    android:id="@+id/buttonFinanc"
+                                    android:id="@+id/buttonNotifyForAllShift"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
                                     android:background="@android:color/transparent" />
+
                                 <ImageView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_marginTop="@dimen/_15sdp"
                                     android:layout_marginRight="@dimen/_20sdp"
                                     android:layout_toRightOf="@id/image7"
-                                    app:srcCompat="@drawable/ic_sms"
                                     android:tint="@android:color/holo_green_dark"
+                                    app:srcCompat="@drawable/ic_sms"
                                     tools:ignore="VectorDrawableCompat" />
                             </RelativeLayout>
 
@@ -432,11 +451,15 @@
                                     android:layout_centerHorizontal="true"
                                     android:layout_marginTop="10dp"
                                     android:layout_marginBottom="10dp"
-                                    android:text="Office Staff SMS"
+                                    android:fontFamily="sans-serif-condensed"
+                                    android:gravity="center"
+                                    android:text="Office Staff Notify"
+                                    android:textColor="@android:color/black"
+
                                     android:textSize="16sp" />
 
                                 <Button
-                                    android:id="@+id/buttonComfo"
+                                    android:id="@+id/buttonOfficeStaffNotify"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
                                     android:background="@android:color/transparent" />
@@ -445,6 +468,7 @@
 
                         </android.support.v7.widget.CardView>
                     </LinearLayout>
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="135dp"
@@ -468,8 +492,7 @@
                                     android:layout_width="50dp"
                                     android:layout_height="50dp"
                                     android:layout_centerInParent="true"
-                                    android:src="@drawable/ic_birthday_cake"
-                                    />
+                                    android:src="@drawable/ic_birthday_cake" />
 
                                 <TextView
                                     android:layout_width="wrap_content"
@@ -478,23 +501,28 @@
                                     android:layout_centerHorizontal="true"
                                     android:layout_marginTop="10dp"
                                     android:layout_marginBottom="10dp"
+                                    android:fontFamily="sans-serif-condensed"
+                                    android:gravity="center"
                                     android:maxLines="2"
-                                    android:text="Birthday Message "
+                                    android:text="Birthday Notification "
+                                    android:textColor="@android:color/black"
+
                                     android:textSize="16sp" />
 
                                 <Button
-                                    android:id="@+id/buttonFinan"
+                                    android:id="@+id/buttonBirthDayNotification"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
                                     android:background="@android:color/transparent" />
+
                                 <ImageView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_marginTop="@dimen/_15sdp"
                                     android:layout_marginRight="@dimen/_20sdp"
                                     android:layout_toRightOf="@id/image9"
-                                    app:srcCompat="@drawable/ic_sms"
                                     android:tint="@android:color/holo_green_dark"
+                                    app:srcCompat="@drawable/ic_sms"
                                     tools:ignore="VectorDrawableCompat" />
                             </RelativeLayout>
 
@@ -526,11 +554,15 @@
                                     android:layout_centerHorizontal="true"
                                     android:layout_marginTop="10dp"
                                     android:layout_marginBottom="10dp"
-                                    android:text="Set Birthday Message"
+                                    android:fontFamily="sans-serif-condensed"
+                                    android:gravity="center"
+                                    android:text="Set Birthday Notification"
+                                    android:textColor="@android:color/black"
+
                                     android:textSize="16sp" />
 
                                 <Button
-                                    android:id="@+id/buttonComforth"
+                                    android:id="@+id/buttonSetBirthDayNotification"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
                                     android:background="@android:color/transparent" />
@@ -548,6 +580,7 @@
 
                         </android.support.v7.widget.CardView>
                     </LinearLayout>
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="135dp"
@@ -571,8 +604,7 @@
                                     android:layout_width="50dp"
                                     android:layout_height="50dp"
                                     android:layout_centerInParent="true"
-                                    android:src="@drawable/ic_sms_all_class"
-                                    />
+                                    android:src="@drawable/ic_sms_all_class" />
 
                                 <TextView
                                     android:layout_width="wrap_content"
@@ -581,23 +613,28 @@
                                     android:layout_centerHorizontal="true"
                                     android:layout_marginTop="10dp"
                                     android:layout_marginBottom="10dp"
+                                    android:fontFamily="sans-serif-condensed"
+                                    android:gravity="center"
                                     android:maxLines="2"
-                                    android:text="SMS All Classes"
+                                    android:text="Notify All Classes"
+                                    android:textColor="@android:color/black"
+
                                     android:textSize="16sp" />
 
                                 <Button
-                                    android:id="@+id/buttonFin"
+                                    android:id="@+id/buttonNotifyAllClass"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
                                     android:background="@android:color/transparent" />
+
                                 <ImageView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_marginTop="@dimen/_15sdp"
                                     android:layout_marginRight="@dimen/_20sdp"
                                     android:layout_toRightOf="@id/image11"
-                                    app:srcCompat="@drawable/ic_sms"
                                     android:tint="@android:color/holo_green_dark"
+                                    app:srcCompat="@drawable/ic_sms"
                                     tools:ignore="VectorDrawableCompat" />
                             </RelativeLayout>
 
@@ -629,11 +666,15 @@
                                     android:layout_centerHorizontal="true"
                                     android:layout_marginTop="10dp"
                                     android:layout_marginBottom="10dp"
-                                    android:text="SMS for all Branches"
+                                    android:fontFamily="sans-serif-condensed"
+                                    android:gravity="center"
+                                    android:text="Notify for all Branches"
+                                    android:textColor="@android:color/black"
+
                                     android:textSize="16sp" />
 
                                 <Button
-                                    android:id="@+id/buttonComort"
+                                    android:id="@+id/buttonNotifyBranches"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
                                     android:background="@android:color/transparent" />
@@ -651,6 +692,7 @@
 
                         </android.support.v7.widget.CardView>
                     </LinearLayout>
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="135dp"
@@ -674,8 +716,7 @@
                                     android:layout_width="50dp"
                                     android:layout_height="50dp"
                                     android:layout_centerInParent="true"
-                                    android:src="@drawable/sms_all_shift"
-                                    />
+                                    android:src="@drawable/ic_managing_commitee" />
 
                                 <TextView
                                     android:layout_width="wrap_content"
@@ -684,23 +725,28 @@
                                     android:layout_centerHorizontal="true"
                                     android:layout_marginTop="10dp"
                                     android:layout_marginBottom="10dp"
+                                    android:fontFamily="sans-serif-condensed"
+                                    android:gravity="center"
                                     android:maxLines="2"
-                                    android:text="SMS for All Shift"
+                                    android:text="Managing Committee"
+                                    android:textColor="@android:color/black"
+
                                     android:textSize="16sp" />
 
                                 <Button
-                                    android:id="@+id/buttonFn"
+                                    android:id="@+id/buttonManagingCommittee"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
                                     android:background="@android:color/transparent" />
+
                                 <ImageView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_marginTop="@dimen/_15sdp"
                                     android:layout_marginRight="@dimen/_20sdp"
                                     android:layout_toRightOf="@id/image13"
-                                    app:srcCompat="@drawable/ic_sms"
                                     android:tint="@android:color/holo_green_dark"
+                                    app:srcCompat="@drawable/ic_sms"
                                     tools:ignore="VectorDrawableCompat" />
                             </RelativeLayout>
 
@@ -732,11 +778,15 @@
                                     android:layout_centerHorizontal="true"
                                     android:layout_marginTop="10dp"
                                     android:layout_marginBottom="10dp"
+                                    android:fontFamily="sans-serif-condensed"
+                                    android:gravity="center"
                                     android:text="Governing Body"
+                                    android:textColor="@android:color/black"
+
                                     android:textSize="16sp" />
 
                                 <Button
-                                    android:id="@+id/buttonComot"
+                                    android:id="@+id/buttonGovernBody"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
                                     android:background="@android:color/transparent" />
@@ -754,11 +804,13 @@
 
                         </android.support.v7.widget.CardView>
                     </LinearLayout>
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="135dp"
                         android:layout_marginBottom="10dp"
-                        android:orientation="horizontal">
+                        android:orientation="horizontal"
+                        android:visibility="gone">
 
                         <android.support.v7.widget.CardView
                             android:layout_width="0dp"
@@ -777,8 +829,7 @@
                                     android:layout_width="50dp"
                                     android:layout_height="50dp"
                                     android:layout_centerInParent="true"
-                                    android:src="@drawable/ic_managing_commitee"
-                                    />
+                                    android:src="@drawable/ic_managing_commitee" />
 
                                 <TextView
                                     android:layout_width="wrap_content"
@@ -787,8 +838,12 @@
                                     android:layout_centerHorizontal="true"
                                     android:layout_marginTop="10dp"
                                     android:layout_marginBottom="10dp"
+                                    android:fontFamily="sans-serif-condensed"
+                                    android:gravity="center"
                                     android:maxLines="2"
                                     android:text="Managing Committee"
+                                    android:textColor="@android:color/black"
+
                                     android:textSize="16sp" />
 
                                 <Button
@@ -796,14 +851,15 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
                                     android:background="@android:color/transparent" />
+
                                 <ImageView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_marginTop="@dimen/_15sdp"
                                     android:layout_marginRight="@dimen/_20sdp"
                                     android:layout_toRightOf="@id/image15"
-                                    app:srcCompat="@drawable/ic_sms"
                                     android:tint="@android:color/holo_green_dark"
+                                    app:srcCompat="@drawable/ic_sms"
                                     tools:ignore="VectorDrawableCompat" />
                             </RelativeLayout>
 

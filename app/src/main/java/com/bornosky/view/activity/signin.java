@@ -59,33 +59,18 @@ public class signin extends AppCompatActivity {
         if (!TextUtils.isEmpty(email) & !TextUtils.isEmpty(password)) {
             if (email.equalsIgnoreCase("noyon") & password.equalsIgnoreCase("123456")) {
                 startActivity(new Intent(signin.this, MainActivity.class));
-            } else {
-
-                Toast.makeText(this, "Please, insert valid credential!", Toast.LENGTH_SHORT).show();
-            }
-            if (email.equalsIgnoreCase("mustafiz") & password.equalsIgnoreCase("123456")) {
+            } else if (email.equalsIgnoreCase("mustafiz") & password.equalsIgnoreCase("123456")) {
+                startActivity(new Intent(signin.this, MainActivity.class));
+            } else if (email.equalsIgnoreCase("nahid") & password.equalsIgnoreCase("123456")) {
+                startActivity(new Intent(signin.this, MainActivity.class));
+            } else if (email.equalsIgnoreCase("sagir") & password.equalsIgnoreCase("123456")) {
                 startActivity(new Intent(signin.this, MainActivity.class));
             } else {
-
-                Toast.makeText(this, "Please, insert valid credential!", Toast.LENGTH_SHORT).show();
-            }
-            if (email.equalsIgnoreCase("nahid") & password.equalsIgnoreCase("123456")) {
-                startActivity(new Intent(signin.this, MainActivity.class));
-            } else {
-
-                Toast.makeText(this, "Please, insert valid credential!", Toast.LENGTH_SHORT).show();
-            }
-            if (email.equalsIgnoreCase("sagir") & password.equalsIgnoreCase("123456")) {
-                startActivity(new Intent(signin.this, MainActivity.class));
-            } else {
-
                 Toast.makeText(this, "Please, insert valid credential!", Toast.LENGTH_SHORT).show();
             }
         } else {
-
             Toast.makeText(this, "Please, insert data!", Toast.LENGTH_SHORT).show();
         }
-
 
     }
 }

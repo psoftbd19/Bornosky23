@@ -8,6 +8,7 @@ import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
+import com.bornosky.view.fragment.Diary;
 import com.bornosky.view.fragment.Message;
 import com.bornosky.view.fragment.Notification;
 
@@ -16,8 +17,8 @@ public class MainActivity extends AppCompatActivity {
 
     TabLayout tabLayout;
     ViewPager viewPager;
-    static int pageNumber = 2;
-    static Fragment messageFragment, notificationFragment;
+    static int pageNumber = 3;
+    static Fragment messageFragment, notificationFragment, diary;
     int mAge;
 
     @Override
@@ -33,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
         viewPager = (ViewPager) findViewById(R.id.viewpager);
         messageFragment = new Message();
         notificationFragment = new Notification();
+        diary = new Diary();
         viewPager.setAdapter(new MyAdapter(getSupportFragmentManager()));
 
         tabLayout.post(new Runnable() {
@@ -62,6 +64,9 @@ public class MainActivity extends AppCompatActivity {
 
             }
             if (position == 1) {
+                return diary;
+            }
+            if (position == 2) {
                 return notificationFragment;
             }
 
@@ -82,6 +87,9 @@ public class MainActivity extends AppCompatActivity {
 
             }
             if (position == 1) {
+                return "Diary";
+            }
+            if (position == 2) {
                 return "Notification";
             }
 
