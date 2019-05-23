@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <CheckBox
+        android:id="@+id/choiceSt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_weight=".2"/>
+
+    <TextView
+        android:id="@+id/tvRoll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1239"
+        android:textSize="@dimen/_15sdp"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:textColor="@android:color/black"
+        android:layout_marginRight="@dimen/_15sdp"
+        android:layout_weight=".2"/>
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="azharul islam"
+        android:textSize="@dimen/_15sdp"
+        android:textColor="@android:color/black"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:id="@+id/tvPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="013234287234"
+        android:textSize="@dimen/_15sdp"
+        android:textColor="@android:color/black"
+        android:layout_weight="1"/>
+</LinearLayout>
